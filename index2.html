@@ -1,0 +1,78 @@
+<!--/**
+* @author : Sanu Vithanage
+* @since : 0.1.0
+**/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web Layout - Case 2</title>
+    <meta content="IJSE, CMJD, Basic Web Layout, RWAD" name="keywords">
+    <meta content="This is for demonstrate how to make a simple web page using css positions" name="description">
+    <meta content="Institute of Software Engineering" name="author">
+    <meta content="Institute of Software Engineering" name="owner">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+
+    <style>
+    main > section > section {
+        border: 1px solid red;
+        height: 300px;
+        position: relative;
+    }
+
+    main > section > section > div {
+            border: 1px red;
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 4);
+        }
+        main > section > section > div:nth-child(1) {
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            left: calc(100% / 4);
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: calc((100% / 4)*2);
+            background-size: cover;
+        }
+        main > section > section > div:nth-child(4) {
+            left: calc((100% / 4)*3);
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<main>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+    </section>
+</main>
+
+<footer>
+
+</footer>
+
+
+</body>
+</html>
